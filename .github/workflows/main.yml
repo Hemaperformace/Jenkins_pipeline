@@ -20,3 +20,10 @@ jobs:
         with:
           name: jmeter-results
           path: result.jtl
+      - name: Latency Lingo
+        uses: latency-lingo/github-action@v0.0.2
+        with:
+          api-key: ${{ secrets.LATENCY_LINGO_API_KEY }}
+          file: jmeter-results.jtl
+          label: github-action-test
+        
