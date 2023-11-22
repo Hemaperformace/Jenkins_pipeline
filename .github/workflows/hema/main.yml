@@ -16,7 +16,7 @@ jobs:
       - name: Run JMeter Action on a test
         uses: rbhadti94/apache-jmeter-action@v0.5.0
         with:
-          testFilePath: jpetstore_Assesment.jmx
+          testFilePath: Jenkins_pipeline/jpetstore_Assesment.jmx
           outputReportsFolder: reports/
           args: "--loglevel INFO"
 
