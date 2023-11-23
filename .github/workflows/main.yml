@@ -13,7 +13,7 @@ jobs:
       - name: Run JMeter Tests
         uses: rbhadti94/apache-jmeter-action@v0.5.0
         with:
-          test-plan-path: jpetstore_Assesment.jmx
+          testFilePath: jpetstore_Assesment.jmx
           args: ''
       - name: Upload Results
         uses: actions/upload-artifact@v2
